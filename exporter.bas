@@ -51,13 +51,13 @@ End Function
 
 
 
-Function LoadFile( header_fine_name as String, out_file as Variant )
+Function LoadFile( load_fine_name as String, out_file as Variant )
 
 	'
 	' File Open
 	'
 	Dim file_path as String
-	file_path = ( Tools.Strings.DirectoryNameoutofPath(ThisComponent.getURL(),"/" ) & "/" & header_fine_name )
+	file_path = ( Tools.Strings.DirectoryNameoutofPath(ThisComponent.getURL(),"/" ) & "/" & load_fine_name )
 	'MsgBox( file_path )
 	
 	Dim file_system As Variant
@@ -86,16 +86,6 @@ End Function
 Function ExportList( sheet as Variant, active_area_h as Integer, key_index as Integer, sub_index as Integer, out_file as Variant )
 	
 	'
-	' 초성 분리및 출력용
-	'
-	Dim current_initial_consonant as Integer : current_initial_consonant = 0
-	Dim last_initial_consonant as Integer : last_initial_consonant = -1
-	Dim current_code as Long : current_code = -1
-	Dim last_code as Long : last_code = -1
-	Dim s as String
-	Dim b() as Byte
-	
-	'
 	'
 	'
 	Dim title, company, result as String
@@ -117,11 +107,6 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		If sheet.getCellByPosition( key_index, i ).String = "" Then
 			Exit For
 		EndIf
-		
-		
-		
-		last_initial_consonant = current_initial_consonant
-		last_code = current_code
     	
     	
     	
@@ -133,10 +118,10 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 			_
 			_
 			& 	" " _
-			&	"( " _
+			&	"[ " _
 				& 			sheet.getCellByPosition( 1, i ).String _
-				& 	" | " & sheet.getCellByPosition( 2, i ).String _
-			& " )" _
+				& 	" ~ " & sheet.getCellByPosition( 2, i ).String _
+			& " ]" _
 			_
 			_
 			& 	" " _
