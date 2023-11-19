@@ -7,3 +7,10 @@
 
 ## 개요
 * 읽은 책의 목록 입니다.
+
+
+
+## 작성 방법
+* 저장소 내의 "reading_list.ods"( libreoffice spreadsheet ) 파일을 연다.
+* "list" sheet에 데이터를 기입 한다.
+* Macro 를 작동시켜 "README.md" 파일을 갱신한다.
