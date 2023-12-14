@@ -186,6 +186,12 @@ Sub Main
 	Dim active_area as Size
 	active_area = CalculateSheetActiveArea( sheet )
 	MsgBox( "Active Area : " & StartX & " : " & StartY & " ~ " & active_area.w & " : " & active_area.h )
+	
+	
+	'
+	' 게임 수 출력
+	'
+	pf.WriteLine( "* " & active_area.h - StartY & " 개" )
     
     
 	'
