@@ -18,7 +18,7 @@ End Type
 Function CalculateSheetActiveArea( sheet as Variant ) as Size
 	
 	Dim ret as Size
-	Dim i, j, h as Integer
+	Dim i, j as Long
 	
 	'
 	' W
