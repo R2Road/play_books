@@ -23,7 +23,7 @@ Function CalculateSheetActiveArea( sheet as Variant ) as Size
 	'
 	' W
 	'
-	j = sheet.Rows.Count - 1
+	j = sheet.Rows.Count - 1 ' 0 부터 시작이라 1 빼준다.
 	For i = StartX to j
 		If sheet.getCellByPosition( i, 0 ).String = "" Then
 			Exit For
@@ -34,7 +34,7 @@ Function CalculateSheetActiveArea( sheet as Variant ) as Size
 	'
 	' H
 	'
-	j = sheet.Rows.Count - 1
+	j = sheet.Rows.Count - 1 ' 0 부터 시작이라 1 빼준다.
 	For i = StartY to j
 		If sheet.getCellByPosition( 0, i ).String = "" Then
 			Exit For
@@ -46,6 +46,33 @@ Function CalculateSheetActiveArea( sheet as Variant ) as Size
 	' Return
 	'
 	CalculateSheetActiveArea = ret
+	
+End Function
+
+
+
+Function CalculateActiveDataCount( sheet as Variant ) as Integer
+	
+	Dim ret as Integer : ret = 0
+		
+	'
+	' H
+	'
+	Dim cur_y as Long
+	Dim end_y as Long : end_y = sheet.Rows.Count - 1 ' 0 부터 시작이라 1 빼준다.
+	
+	For cur_y = StartY to end_y
+		If sheet.getCellByPosition( 0, cur_y ).String = "" Then
+			Exit For
+		ElseIf sheet.getCellByPosition( 0, cur_y ).String = "o" Then
+			ret = ret + 1
+		EndIf
+	Next cur_y
+	
+	'
+	' Return
+	'
+	CalculateActiveDataCount = ret
 	
 End Function
 
@@ -191,7 +218,9 @@ Sub Main
 	'
 	' 게임 수 출력
 	'
-	pf.WriteLine( "* " & active_area.h - StartY + 1 & " 개" )
+	Dim active_data_count as Integer
+	active_data_count = CalculateActiveDataCount( sheet )
+	pf.WriteLine( "* " & active_data_count & " 개" )
     
     
 	'
