@@ -116,7 +116,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	'
 	Dim title, company, result as String
-	Dim i, j as Integer
+	Dim i as Integer
 	For i = StartY to active_area_h
     
 		'
