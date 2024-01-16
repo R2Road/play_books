@@ -116,13 +116,13 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	'
 	Dim title, company, result as String
-	Dim i as Integer
-	For i = StartY to active_area_h
+	Dim current_y as Integer
+	For current_y = StartY to active_area_h
     
 		'
 		' Check Export Flag
 		'
-		If sheet.getCellByPosition( StartX, i ).String = "x" Then
+		If sheet.getCellByPosition( StartX, current_y ).String = "x" Then
 			GoTo Continue
 		EndIf
     	
@@ -131,7 +131,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		'
 		' Empty is End
 		'
-		If sheet.getCellByPosition( key_index, i ).String = "" Then
+		If sheet.getCellByPosition( key_index, current_y ).String = "" Then
 			Exit For
 		EndIf
     	
@@ -146,13 +146,13 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 			_
 			& 	" " _
 			&	"[ " _
-				& 			sheet.getCellByPosition( 1, i ).String _
-				& 	" ~ " & sheet.getCellByPosition( 2, i ).String _
+				& 			sheet.getCellByPosition( 1, current_y ).String _
+				& 	" ~ " & sheet.getCellByPosition( 2, current_y ).String _
 			& " ]" _
 			_
 			_
 			& 	" " _
-			&  	sheet.getCellByPosition( 3, i ).String _
+			&  	sheet.getCellByPosition( 3, current_y ).String _
     	
     	
     	
@@ -163,7 +163,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		'MsgBox( result )
     	
 	Continue:
-	Next i
+	Next current_y
 	
 End Function
 
