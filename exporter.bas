@@ -116,8 +116,11 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	'
 	Dim title, company, result as String
+	
+	Dim start_y as Integer : start_y = active_area_h
+	Dim end_y as Integer : end_y = StartY
 	Dim current_y as Integer
-	For current_y = StartY to active_area_h
+	For current_y = start_y to end_y step -1
     
 		'
 		' Check Export Flag
