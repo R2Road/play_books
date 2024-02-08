@@ -117,10 +117,11 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	Dim last_year as String
 	Dim current_year as String
-	Dim count_year as Integer
 	
 	Dim last_month as String
 	Dim current_month as String
+	
+	Dim count_reading as Integer
 	
 	
 	'
@@ -163,13 +164,13 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		current_year = Year( sheet.getCellByPosition( 2, current_y ).Value )
 		If current_year <> last_year Then
 		
-			count_year = 0
+			count_reading = 0
 			For temp_y = current_y to end_y
 			
 				If sheet.getCellByPosition( StartX, current_y ).String = "o" Then
 				
 					If current_year = Year( sheet.getCellByPosition( 2, temp_y ).Value ) Then
-						count_year = count_year + 1
+						count_reading = count_reading + 1
 					Else
 						Exit For
 					EndIf
@@ -188,7 +189,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 					&	"{" _
 						& 	current_year _
 						& 	" : " _
-						& 	count_year _
+						& 	count_reading _
 						& 	"권" _
 					&	"}" _
 				&	"}$" _
