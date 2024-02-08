@@ -117,6 +117,8 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	Dim last_year as String
 	Dim current_year as String
+	Dim count_year as Integer
+	
 	Dim last_month as String
 	Dim current_month as String
 	
@@ -129,6 +131,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	Dim start_y as Integer : start_y = StartY
 	Dim end_y as Integer : end_y = active_area_h
 	Dim current_y as Integer
+	Dim temp_y as Integer
 	For current_y = start_y to end_y
     
 		'
@@ -160,7 +163,25 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		current_year = Year( sheet.getCellByPosition( 2, current_y ).Value )
 		If current_year <> last_year Then
 		
-			out_file.WriteLine( "####" & " " & "${\sf\color{RubineRed} {" & current_year & "}}$" )
+			count_year = 0
+			For temp_y = current_y to end_y
+			
+				If sheet.getCellByPosition( StartX, current_y ).String = "o" Then
+				
+					If current_year = Year( sheet.getCellByPosition( 2, temp_y ).Value ) Then
+						count_year = count_year + 1
+					Else
+						Exit For
+					EndIf
+					
+				EndIf
+				
+			Next temp_y
+			
+			'
+			'
+			'
+			out_file.WriteLine( "####" & " " & "${\sf\color{RubineRed} {" & current_year & "}}$" & " : " & count_year & "권" )
 			
 			last_year = current_year
 			
