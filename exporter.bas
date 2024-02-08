@@ -126,10 +126,10 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	Dim title, company, result as String
 	
-	Dim start_y as Integer : start_y = active_area_h
-	Dim end_y as Integer : end_y = StartY
+	Dim start_y as Integer : start_y = StartY
+	Dim end_y as Integer : end_y = active_area_h
 	Dim current_y as Integer
-	For current_y = start_y to end_y step -1
+	For current_y = start_y to end_y
     
 		'
 		' Check Export Flag
@@ -291,10 +291,13 @@ Sub Main
 			'
 		    ' Sort Field
 		    '
-		    Dim sort_field(0) as new com.sun.star.util.SortField
+		    Dim sort_field(1) as new com.sun.star.util.SortField
 				sort_field(0).Field = 2
-			    sort_field(0).SortAscending = TRUE
+			    sort_field(0).SortAscending = FALSE
 			    sort_field(0).FieldType = com.sun.star.util.SortFieldType.ALPHANUMERIC 'com.sun.star.util.SortFieldTypeNUMERIC
+			    sort_field(1).Field = 3
+			    sort_field(1).SortAscending = FALSE
+			    sort_field(1).FieldType = com.sun.star.util.SortFieldType.ALPHANUMERIC 'com.sun.star.util.SortFieldTypeNUMERIC
 		    
 		    '
 		    ' Description
@@ -314,6 +317,28 @@ Sub Main
 		'
 		pf.WriteLine( "## 목록" & Chr( 10 ) )
 		ExportList( sheet, active_area.h, 1, 2, pf )
+		
+		
+		'
+		' RollBack
+		'
+			'
+		    ' Sort Field
+		    '
+				sort_field(0).Field = 2
+			    sort_field(0).SortAscending = TRUE
+			    sort_field(1).Field = 3
+			    sort_field(1).SortAscending = TRUE
+			    
+			'
+		    ' Description
+		    '
+			    sort_description(0).Value = sort_field()
+			    
+			'
+		    ' Do
+		    '
+		    range4sort.Sort( sort_description() )
 	
 	ERROR_END:
     
