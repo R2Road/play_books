@@ -165,11 +165,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		' Build Info
 		'
 		result = _
-				"####" _
-			_
-			_
-			& 	" " _
-			&	"[ " _
+					"[ " _
 				& 			sheet.getCellByPosition( 1, current_y ).String _
 				& 	" ~ " & sheet.getCellByPosition( 2, current_y ).String _
 			& " ]" _
@@ -177,6 +173,7 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 			_
 			& 	" " _
 			&  	sheet.getCellByPosition( 3, current_y ).String _
+			&	Chr( 10 )
     	
     	
     	
