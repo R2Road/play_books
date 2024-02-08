@@ -150,6 +150,11 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		
 		
 		'
+		' REF
+		'
+		' Latex Color : https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+		
+		'
 		' Year
 		'
 		current_year = Year( sheet.getCellByPosition( 2, current_y ).Value )
