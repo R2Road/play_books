@@ -115,6 +115,13 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	'
 	'
+	Dim last_year as String
+	Dim current_year as String
+	
+	
+	'
+	'
+	'
 	Dim title, company, result as String
 	
 	Dim start_y as Integer : start_y = active_area_h
@@ -136,6 +143,20 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		'
 		If sheet.getCellByPosition( key_index, current_y ).String = "" Then
 			Exit For
+		EndIf
+		
+		
+		
+		'
+		' Year
+		'
+		current_year = Year( sheet.getCellByPosition( 2, current_y ).Value )
+		If current_year <> last_year Then
+		
+			out_file.WriteLine( "####" & " " & current_year )
+			
+			last_year = current_year
+			
 		EndIf
     	
     	
