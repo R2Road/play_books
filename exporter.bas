@@ -260,6 +260,36 @@ Sub Main
 		
 		
 		'
+		' Sort
+		'
+			'
+			' Range
+			'
+			Dim range4sort
+				range4sort = sheet.getCellRangeByPosition( StartX, StartY, active_area.w, active_area.h )
+				
+			'
+		    ' Sort Field
+		    '
+		    Dim sort_field(0) as new com.sun.star.util.SortField
+				sort_field(0).Field = 2
+			    sort_field(0).SortAscending = TRUE
+			    sort_field(0).FieldType = com.sun.star.util.SortFieldType.ALPHANUMERIC 'com.sun.star.util.SortFieldTypeNUMERIC
+		    
+		    '
+		    ' Description
+		    '
+		    Dim sort_description(0) as new com.sun.star.beans.PropertyValue
+			    sort_description(0).Name = "SortFields"
+			    sort_description(0).Value = sort_field()
+		    
+		    '
+		    ' Do
+		    '
+		    range4sort.Sort( sort_description() )
+		
+		
+		'
 		' Write : Korean List
 		'
 		pf.WriteLine( "## 목록" & Chr( 10 ) )
