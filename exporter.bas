@@ -209,7 +209,38 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 		current_month = Month( sheet.getCellByPosition( 2, current_y ).Value )
 		If current_month <> last_month Then
 		
-			out_file.WriteLine( "####" & " " & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" & " " & "${\sf\color{Cyan} {" & current_month & "}}$" )
+			count_reading = 0
+			For temp_y = current_y to end_y
+			
+				If sheet.getCellByPosition( StartX, current_y ).String = "o" Then
+				
+					If current_year = Year( sheet.getCellByPosition( 2, temp_y ).Value ) And current_month = Month( sheet.getCellByPosition( 2, temp_y ).Value ) Then
+						count_reading = count_reading + 1
+					Else
+						Exit For
+					EndIf
+					
+				EndIf
+				
+			Next temp_y
+			
+			'
+			'
+			'
+			out_file.WriteLine( _
+					"####" _
+				& 	" " _
+				& 	"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" _
+				& 	" " _
+				& 	"${\sf\color{Cyan}" _
+					&	"{" _
+						& 	current_month _
+						& 	" : " _
+						& 	count_reading _
+						& 	"권" _
+					& 	"}" _
+				&	"}$" _
+			)
 			
 			last_month = current_month
 			

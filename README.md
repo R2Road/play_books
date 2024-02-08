@@ -27,7 +27,7 @@
 ## 목록
 
 #### ${\sf\color{RubineRed}{2024 : 28권}}$
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {2}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{2 : 6권}}$
 [ 24.02.04 ~ 24.02.07 ] 라프 코스터의 재미이론
 
 [ 24.02.02 ~ 24.02.05 ] 셜록홈즈 2 : 네개의 서명
@@ -40,7 +40,7 @@
 
 [ 24.01.30 ~ 24.02.01 ] 셜록홈즈 1 : 주홍색 연구
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {1}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{1 : 22권}}$
 [ 24.01.30 ~ 24.01.30 ] 만화로 보는 그리스 로마 신화 14
 
 [ 24.01.29 ~ 24.01.29 ] 만화로 보는 그리스 로마 신화 13
@@ -86,7 +86,7 @@
 [ 23.12.29 ~ 24.01.03 ] 해리포터 불의 잔 4
 
 #### ${\sf\color{RubineRed}{2023 : 7권}}$
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {12}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{12 : 4권}}$
 [ 23.12.27 ~ 23.12.29 ] 해리포터 불의 잔 3
 
 [ 23.12.20 ~ 23.12.26 ] 해리포터 불의 잔 2
@@ -95,14 +95,14 @@
 
 [ 23.11.07 ~ 23.12.14 ] 해리포터 아즈카반의 죄수
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {11}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{11 : 1권}}$
 [ 23.10.29 ~ 23.11.05 ] 해리포터 비밀의 방 2
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {10}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{10 : 2권}}$
 [ 23.10.24 ~ 23.10.28 ] 해리포터 비밀의 방 1
 
 [ 23.10.10 ~ 23.10.23 ] 해리포터 마법사의 돌
 
 #### ${\sf\color{RubineRed}{2019 : 1권}}$
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {7}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{7 : 1권}}$
 [ 19.07.04 ~ 19.07.22 ] 라프 코스터의 재미이론
