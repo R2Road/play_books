@@ -117,6 +117,8 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 	'
 	Dim last_year as String
 	Dim current_year as String
+	Dim last_month as String
+	Dim current_month as String
 	
 	
 	'
@@ -156,6 +158,22 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 			out_file.WriteLine( "####" & " " & "${\sf\color{RubineRed} {" & current_year & "}}$" )
 			
 			last_year = current_year
+			
+			last_month = ""
+			
+		EndIf
+		
+		
+		
+		'
+		' Month
+		'
+		current_month = Month( sheet.getCellByPosition( 2, current_y ).Value )
+		If current_month <> last_month Then
+		
+			out_file.WriteLine( "####" & " " & "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" & " " & "${\sf\color{Cyan} {" & current_month & "}}$" )
+			
+			last_month = current_month
 			
 		EndIf
     	
