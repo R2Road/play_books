@@ -26,7 +26,7 @@
 <br/><br/>
 ## 목록
 
-#### ${\sf\color{RubineRed} {2024}}$ : 28권
+#### ${\sf\color{RubineRed} {2024}}$ ${\sf\color{RubineRed} { : 28권}}$
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {2}}$
 [ 24.02.04 ~ 24.02.07 ] 라프 코스터의 재미이론
 
@@ -85,7 +85,7 @@
 
 [ 23.12.29 ~ 24.01.03 ] 해리포터 불의 잔 4
 
-#### ${\sf\color{RubineRed} {2023}}$ : 7권
+#### ${\sf\color{RubineRed} {2023}}$ ${\sf\color{RubineRed} { : 7권}}$
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {12}}$
 [ 23.12.27 ~ 23.12.29 ] 해리포터 불의 잔 3
 
@@ -103,6 +103,6 @@
 
 [ 23.10.10 ~ 23.10.23 ] 해리포터 마법사의 돌
 
-#### ${\sf\color{RubineRed} {2019}}$ : 1권
+#### ${\sf\color{RubineRed} {2019}}$ ${\sf\color{RubineRed} { : 1권}}$
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan} {7}}$
 [ 19.07.04 ~ 19.07.22 ] 라프 코스터의 재미이론

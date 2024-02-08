@@ -181,7 +181,13 @@ Function ExportList( sheet as Variant, active_area_h as Integer, key_index as In
 			'
 			'
 			'
-			out_file.WriteLine( "####" & " " & "${\sf\color{RubineRed} {" & current_year & "}}$" & " : " & count_year & "권" )
+			out_file.WriteLine( _
+					"####" _
+				& 	" " _
+				& 	"${\sf\color{RubineRed} {" & current_year & "}}$" _
+				& 	" " _
+				& 	"${\sf\color{RubineRed} {" & " : " & count_year & "권" &  "}}$" _
+			)
 			
 			last_year = current_year
 			
