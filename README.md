@@ -19,15 +19,17 @@
 
 <br><br>
 ## 읽은 책 수
-* 36 개
+* 37 개
 
 
 
 <br/><br/>
 ## 목록
 
-#### ${\sf\color{RubineRed}{2024 : 28권}}$
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{2 : 6권}}$
+#### ${\sf\color{RubineRed}{2024 : 29권}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{2 : 7권}}$
+[ 24.02.09 ~ 24.02.15 ] 만화로 배우는 조선 왕실의 신화
+
 [ 24.02.04 ~ 24.02.07 ] 라프 코스터의 재미이론
 
 [ 24.02.02 ~ 24.02.05 ] 셜록홈즈 2 : 네개의 서명
