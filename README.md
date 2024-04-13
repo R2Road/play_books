@@ -19,14 +19,17 @@
 
 <br><br>
 ## 읽은 책 수
-* 37 개
+* 38 개
 
 
 
 <br/><br/>
 ## 목록
 
-#### ${\sf\color{RubineRed}{2024 : 29권}}$
+#### ${\sf\color{RubineRed}{2024 : 30권}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{4 : 1권}}$
+[ 24.02.16 ~ 24.04.13 ] 수학을 포기하려는 너에게
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{2 : 7권}}$
 [ 24.02.09 ~ 24.02.15 ] 만화로 배우는 조선 왕실의 신화
 
