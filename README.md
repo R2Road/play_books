@@ -19,12 +19,16 @@
 
 <br><br>
 ## 읽은 책 수
-* 38 개
+* 39 개
 
 
 
 <br/><br/>
 ## 목록
+
+#### ${\sf\color{RubineRed}{2025 : 1권}}$
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{5 : 1권}}$
+[ 25.05.11 ~ 25.05.30 ] 연금술사
 
 #### ${\sf\color{RubineRed}{2024 : 30권}}$
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${\sf\color{Cyan}{4 : 1권}}$
